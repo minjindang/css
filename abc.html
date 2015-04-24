@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<!-->程式碼執行優先順序:2</!-->
+	<style type="text/css">
+		p{
+			font-size: 50px;
+		}
+
+	</style>
+
+	<!-->程式碼執行優先順序:3</!-->
+	<link rel="stylesheet" type="text/css" href="123.css">
+
+	<!-->程式碼執行優先順序:1</!-->
+	<style type="text/css">
+		@import url(123.css);
+	</style>
+
+</head>
+<body>
+	
+	<p align="center">I'm willy.</p>
+		<br>
+		<!-->程式碼執行優先順序:4</!-->
+		<p style="font-size:20px">TETE</p>
+
+		<p class="test">GGGG</p>
+		<!-->適用於javascript</!-->
+		<p id="eee">EEEE</p>
+
+		<ol>
+			<li>a</li>
+			<li>b</li>
+			<li>c</li>
+		</ol>
+		<ul>
+			<li>d</li>
+			<li>e</li>
+			<li>f</li>
+		</ul>		
+		<table>
+			<tr>
+				<td>E</td>
+				<td>R</td>
+				<td>C</td>
+			</tr>
+		</table>
+
+		<form method="POST" enctype="text/plain" action="Mailto:willy741026@gmail.com?subject=i am testing">
+			請輸入妳的名字:
+			<input type="text" NAME="WILLY"><br>
+			請輸入妳的密碼:
+			<input type="password" name="password"><br>
+			<input type="submit" name="submit_button" value="送出"><br>
+			<input type="reset" name="rest_button" value="重設"><br>
+		</form>
+   </body>
+</html>
